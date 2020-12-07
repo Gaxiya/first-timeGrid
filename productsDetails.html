@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="contentD">
+        <div class="navbarD"> 
+            
+            <div id="logo"><img src="img/logo.png"  alt=""></div>
+            <div class="menu">
+              
+                    <div class="menus"><a href="index.html">Home    </a></div>
+                    <div class="menus"><a href="products.html">Products</a></div>
+                    <div class="menus"><a href="#">History </a></div>
+                    <div class="menus"><a href="#">Showroom</a></div>
+                    <div class="menus" id="contact"><a href="contacts.html">Contact </a></div>
+                    <img src="img/search.png"  id="search" alt="">
+            </div>
+    </div>
+    <div class="linksD">
+        <div class="liD">
+            <ul>
+                <li><a href="#">All</a> </li>
+                <li><a href="#">HOME</a> </li>
+                <li><a href="#">OFFICE</a> </li>
+                <li><a href="#">FURNITURE</a> </li>
+                <li><a href="#">MODERN</a> </li>
+                <li><a href="#">CLASSIC</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sliderD" >
+        <div  id="sD" >
+
+        </div>
+        <div class="navD"> 
+            <button class="buttonD" id="controll" onmouseover="sliderD(k=1)" onmouseout="sliderD(k=0)"></button>
+            <button class="buttonD" id="controll11" onmouseover="sliderD(k=2)" onmouseout="sliderD(k=0)" ></button>
+            <button class="buttonD" id="controll2" onmouseover="sliderD(k=3)" onmouseout="sliderD(k=0)" ></button> 
+         </div>
+    </div>
+    <div class="slidercontD">
+        <h1>Fishnet Chair</h1>
+        <h3>Hot Deal</h3>
+        <h5>$ <span>36.7</span>/sq</h5>
+        <button class="arrowH">
+            Order us
+            <img src="img/arrow6.png" alt="">
+        </button>
+        <div class="textD">
+            <p>
+                The majesty of Mountains - Ugmonk style. <br>
+            <br>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br> do eiusmod tempor incididunt ut labore<br>
+<br>
+ et dolore magna aliqua. Ut enim ad minim veniam, quis<br> nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br> commodo consequat. <br> <br>
+Duis aute irure dolor in reprehenderit in voluptate velit esse <br> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat  <br>cupidatat non proident.
+            </p>
+        </div>
+    </div>
+    <div class="related">
+        <div class="rel">
+            <h1>Related Products</h1>
+        </div>
+        <div class="btn_ghost3">
+            <div class="explore">
+                <a href="#">explore all <img src="img/arrow.png" alt=""></a>
+               
+            </div>
+        </div>
+        <div class="productsD">
+            <img src="img/product-11.png" id="pd" alt="">
+            <img src="img/product-21.png" id="pd1" alt="">
+            <img src="img/product-31.png" id="pd2" alt="">
+           
+        </div>
+    </div>
+    <div class="fopD"> <div class="footer">
+        <div class="tit">
+         <h3>Contact Us</h3>
+          <h3>
+             Useful Information
+         </h3>
+         <h3>Let’s Stay in Touch!</h3>
+     </div>
+     
+         <div class="contact">
+            
+             <p>132A Bridge Road Richmond VIC <br>
+                 Australia.</p>
+             <p> Talk to us on 1300 132 <br>
+                 info@interior.com</p>
+         </div>
+       
+         <div class="useful">
+             
+            <div class="use1"> <p >Sales terms</p>
+             <p >Customer care</p>
+             <p >Delivery</p></div> 
+             <div class="use2"><p >Architect accounts</p>
+             <p >Careers</p>
+             <p > Exchanges & returns</p></div> 
+         </div>
+         <div class="lets">
+           
+            <p>Suscribe to know about our latest news, products and <br> special offers just for suscribers.</p>
+         </div>
+     
+         <form >
+             <input type="email" name="email" id="email" placeholder="your email address" >
+             <input type="submit" value="">
+         </form>
+         <div class="foot">
+             <p id="copy">© Copyright - INTERIOR 2016. All Rights Reserved.</p>
+           <div class="social">
+            <a href="#" id="socialF"> <img src="img/socialF.png"  alt=""></a>
+            <a href="#" id="socialT"> <img src="img/socialT.png"  alt=""></a>
+            <a href="#" id="socialG"> <img src="img/socialG.png"  alt=""></a>
+            <a href="#" id="socialR"> <img src="img/socialR.png"  alt=""></a>
+         </div>
+             <p id="term">Terms & Conditions / Privacy policy & Cookies</p>
+         </div>
+     </div>
+    </div>
+    </div>
+    <script>
+        var sd= ['url(img/sliderD.png)','url(img/controll.png)','url(img/controll11.png)','url(img/controll2.png)'];
+        function sliderD(k)
+        {   var e=document.getElementById("sD");
+            e.style.backgroundImage=sd[k];
+            
+           
+        }
+    </script>
+</body>
+</html>

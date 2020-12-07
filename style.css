@@ -1,0 +1,1991 @@
+@font-face {
+    font-family: 'Montserrat Light';
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+        url('fonts/Montserrat-Light.woff2') format('woff2'),
+        url('fonts/Montserrat-Light.woff') format('woff'),
+        url('fonts/Montserrat-Light.ttf') format('truetype');
+    
+    
+  }
+  @font-face {
+    font-family: 'Montserrat B';
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('fonts/Montserrat-Bold.woff') format('woff'),
+        url('fonts/Montserrat-Bold.ttf') format('truetype');
+    
+  }
+ 
+  @font-face {
+	font-family: 'Montserrat T';
+	src: url('fonts/montserrat_thin.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/montserrat_thin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		 url('fonts/Montserrat-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('fonts/Montserrat-Thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		 url('fonts/Montserrat-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('fonts/montserrat-thin.svg#montserrat_thin') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: 'icomoon';
+    src:url(fonts/IcoMoon-Free.ttf);
+}
+@font-face{
+    font-family: 'Gotham';
+    src: url(fonts/Gotham-Light.ttf);
+}
+  .content
+{   margin-left: 98px;
+    margin-right: 98px;
+    display: grid;
+    grid-template-columns: repeat(12,70px);
+    grid-template-rows: [navbar]90px [slider]710px [feaproduct]609px [promo]683px [trending]1108px [hotdeal]800px [exclusive]810px [mobile]516px [footer]384px;
+    grid-column-gap:30px;  
+}
+.contentP
+{   
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: [navbar]90px 168px [title]58px [hero]44px  [products]1774px 120px [promo]683px [footer]384px;
+     
+}
+
+.contentD{
+    margin-left: 98px;
+    margin-right: 98px;
+     display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: [navbar]90px [links]70px 72px [sliderD]651px 245px [related]468px [footer]384px;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;  
+}
+body{
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 1366px;
+   
+}
+.navbar{
+   display: grid;
+   grid-template-columns: repeat(12,70px);
+    grid-column: 1/12;
+    
+    grid-template-rows: 90px;
+    grid-auto-flow: row;
+    text-transform: uppercase;
+    align-items: end;
+  
+}
+.navbarP{
+    
+    margin-left: 98px;
+    margin-right: 98px;
+    display: grid;
+    grid-template-columns: repeat(12,70px);
+     grid-column: 1/12;
+     grid-row: navbar;
+     grid-template-rows: 90px;
+     grid-auto-flow: row;
+     text-transform: uppercase;
+     align-items: end;
+    z-index: 2;
+ }
+ .navbarD{
+    display: grid;
+    grid-template-columns: repeat(12,70px);
+     grid-column: 1/12;
+     grid-row: navbar;
+     grid-template-rows: 90px;
+     grid-auto-flow: row;
+     text-transform: uppercase;
+     align-items: end;
+   
+ }
+ .linksD {
+     display: grid;
+     grid-row:links ;
+     grid-column: 1/span 12;
+
+     grid-template-rows: 28px 13px 29px;
+     background-color: #f4f4f4;
+     margin-left: -98px;
+     margin-right: -98px;
+ 
+ }
+ .liD{
+     display: grid;
+     grid-row: 2;
+     grid-auto-flow: column;
+     margin-left: 360px;
+     margin-right: 359px;
+
+ }
+ .liD ul{margin: 0px;
+     display: grid;
+    grid-row: 2;
+    grid-auto-flow: column
+
+ }
+ .liD li{display: grid;
+    grid-row: 2;
+    grid-auto-flow: column;
+
+ }
+ .liD a{
+     text-decoration: none;
+     color: #6c6c6c;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 1.8px;
+ }
+ .liD a:hover{
+    color: #212121;
+ }
+ .hero{
+    grid-template-rows: [navbar]90px 168px [title]58px [hero]44px;
+    grid-column: 1/12;
+display: grid;
+width: 1366px;
+background-color: #f5f5f5;
+grid-row: navbar/span 4;
+
+z-index: 1;
+ }
+ .title{
+     display: grid;
+     margin-left: 98px;
+     margin-right: 98px;
+     grid-template-columns: repeat(12,70px);
+     grid-column-gap: 30px;
+     grid-row:title ;
+ }
+ .title h1 {display: grid;
+    grid-column: 1/10;
+     margin: 0px;
+     /* Style for "Our Produc" */
+
+color: #212121;
+font-family: Montserrat T;
+font-size: 62px;
+font-weight: 500;
+font-style: normal;
+letter-spacing: normal;
+
+
+/* Text style for "Our Produc" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+ }
+#logo{
+    width: 189px;
+   grid-column: 1/2;
+   
+    height:  24px;
+    justify-content: end;
+}
+#search{
+    width: 19px;
+    height: 23px;
+    display: grid;
+    border-radius: 75%;
+    margin-bottom: 4px;
+    padding-left: 21px;
+    justify-self: end;
+    
+   
+}
+#search:hover{
+    opacity: 0.3;
+}
+
+.menu{
+display: grid;
+    grid-column-start: 8;
+    grid-column-end:span 6;
+   grid-auto-flow: column;
+   grid-template-rows: 27px;
+  
+ margin-left: 73px;
+    
+}
+.menus
+{   display: grid;
+    grid-row: 1;
+    font-weight: 700;
+   padding-right: 25px;
+    font-family: Montserrat Light ;
+    font-size: 14px;
+    justify-self:end;
+    color:#9c9c9c;
+    
+}
+#contact
+{
+    margin-left: 10px;
+    margin-right: 33px;
+}
+.menus a{color:#9c9c9c;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-right: -10px;
+}
+.menu div:hover 
+{  margin-bottom: -1px;
+     margin-right: -2px;
+     margin-left: -2px;
+     border-bottom: 3px solid #303030;
+   
+}
+.menus a:hover{
+    font-family: Montserrat B ;
+    color: #303030;
+    
+}
+
+.slider{ display: grid;
+    grid-column-start: 1;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-template-rows: 283px [slidercont]233px  140px [buttons]60px ;
+    grid-auto-flow: inherit;
+    margin-left: -98px;
+    margin-right: -98px;
+    width:1366px;
+    height: 710px;
+    background-image: url(img/slider-img.png) ;
+    background-size: 100% 100%;
+    
+    
+}
+.arrowH img{ opacity: 0;
+
+}
+.arrowH:hover img{
+    opacity: 1;
+}
+.navigation { display: grid;
+   grid-column: 7;
+   grid-row-start: buttons;
+    height: 40px;
+    grid-auto-flow: column;
+    
+
+}
+.butons{    
+    padding: 10px;
+}
+.butons button{ border: 0px;
+    height: 40px;
+     width: 30px;
+    background-image: url(img/naviSmall.png) ;
+    border-radius: 85%;
+}
+.butons button:hover
+{   width: 40px;
+    padding: 0px;
+    margin: -5px;
+    background-image: url(img/active.png);
+}
+.butons button:checked
+{   text-decoration: none;
+    border: none;
+}
+.sliderContent
+{   
+    display: grid;
+    
+    margin-left: 98px;
+    margin-right: 98px;
+    grid-template-columns: repeat(12,70px);
+    grid-template-rows: 35px 77px 86px 45px;
+    grid-column-gap:30px;
+   grid-column: 1/span 5;
+   grid-auto-flow: row;
+   grid-row: slidercont;
+    text-transform: uppercase;
+}
+.sliderContent h3{
+    /* Style for "TRENDING" */
+
+color: #34bc4b;
+color: #ffffff;
+font-family: Montserrat B;
+font-size: 18px;
+grid-row-start: 1;
+font-style: normal;
+letter-spacing: normal;
+line-height: 48px;
+text-align: left;
+text-transform: uppercase;
+/* Text style for "TRENDING" */
+color: #34bc4b;
+font-style: normal;
+letter-spacing: 1.8px;
+line-height: normal;
+}
+
+.sliderContent h1
+{   grid-row-start: 2;
+    margin-top: 0px;
+    width: 500px;
+    height: 43px;
+    color: #303030;
+    font-family: 'Montserrat T';
+    font-size: 62px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 72px;
+    text-align: left;
+    text-transform: uppercase;
+    /* Text style for "Fishnet Ch" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.sliderContent p
+{
+    /* Style for "Seat and b" */
+    grid-row-start: 3;
+    grid-column: 1/span 6;
+    color: #7e7e7e;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+    text-transform: none;
+    /* Text style for "Seat and b" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.sliderContent button
+{
+    grid-row-start: 4;
+    background-image: url(img/order.png);
+    border: none;
+    width: 212px;
+    height: 45px;
+    box-shadow: 0 2px 5px 1px rgba(48, 48, 48, 0.35);
+    border-radius: 23px;
+    background-color: #ffffff;
+    /* Style for "Order Us" */
+color: #303030;
+color: #7e7e7e;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "Order Us" */
+color: #303030;
+font-style: normal;
+letter-spacing: 3.6px;
+line-height: normal;
+}
+.sliderContent button:checked
+{   text-decoration: none;
+    border: 1px solid #f0f0f0;
+}
+.featuredProduct{
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-start: feaproduct;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-template-rows: 120px [tabControl]49px 50px [tabContent]270px ;
+}
+.tabControl{
+    display: grid;
+    grid-row: tabControl;
+    
+    grid-column: 1/span 3;
+    
+}
+.tabButtons{
+    grid-row-start: tabControl;
+    grid-auto-flow: row;
+   
+    color: #7e7e7e;
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+/* Text style for "New" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-decoration: none;
+}
+.tabButtons a{
+    margin-left: 9px;
+    margin-right: 9px;
+    color: #7e7e7e;
+font-family: Montserrat;
+font-size: 36px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+/* Text style for "New" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-decoration: none;
+}
+.tabButtons a:hover{
+    color: #303030;
+font-family: Montserrat B;
+font-size: 36px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+/* Text style for "Featured" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+border-bottom:3px solid #303030 ;
+}
+.btn_ghost {
+    display: grid;
+    grid-row: tabControl;
+    grid-auto-flow: column;
+  grid-column: 10/span 3;
+  align-content: end;
+    justify-content: end;
+}
+.btn_ghost a{
+    /* Style for "explore al" */
+   
+    color: #303030;
+color: #7e7e7e;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "explore al" */
+color: #303030;
+font-style: normal;
+letter-spacing: 3.6px;
+line-height: normal;
+text-decoration: none;
+}
+.btn_ghost a:hover{
+    opacity: 0.5;
+}
+.btn_ghost2 a:hover{
+    opacity: 0.5;
+}
+
+.tabContent{
+    display: grid;
+    grid-row: tabContent;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-template-rows: 62px [arrow]50px 17px [name]17px 23px [details]33px 68px;
+}
+.productContent {
+    display: grid;
+    grid-template-rows: 62px [arrow]50px 17px [name]17px 23px [details]33px;
+    grid-row: 1/span 7;
+    grid-column: 1/span 3;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #ababab;
+    background-color: #ffffff;
+    opacity: 0.9;
+    background-image: url(img/product-1.png);
+    }
+
+
+
+.productContent img{
+   
+    display: none;
+    grid-row: arrow;
+  border-radius: 24px;
+  background-color: #ffffff;
+  
+  }
+ 
+  .productContent h5{
+    /* Style for "Fishnet Ch" */
+    display:none;
+    grid-row: name;
+color: #303030;
+font-family: Montserrat B;
+font-size: 22px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 29.88px;
+text-align: center;
+/* Text style for "Fishnet Ch" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+
+.productContent div {
+    /* Style for "Seat and b" */
+    display: none;
+   
+    width: 215px;
+    grid-row: details;
+    text-align: center;
+color: #7e7e7e;
+font-family: Montserrat Light;
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 21.91px;
+
+/* Text style for "Seat and b" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+/* Text style for "or highly" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+
+}
+
+.productContent2 {
+    display: grid;
+    grid-template-rows: 62px [arrow]50px 17px [name]17px 23px [details]33px;
+    grid-row: 1/span 7;
+    grid-column: 4/span 3;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #ababab;
+    background-color: #ffffff;
+    opacity: 0.9;
+    background-image: url(img/product-2.png);
+    
+    }
+    .productContent2:hover{
+       background-image: url(img/backF.png);
+    }
+    .productContent3:hover{
+        background-image: url(img/backF.png);
+     }.productContent4:hover{
+        background-image: url(img/backF.png);
+     }
+.productContent3 {
+ display: grid;
+ grid-template-rows: 62px [arrow]50px 17px [name]17px 23px [details]33px;
+ grid-row: 1/span 7;
+ grid-column: 7/span 3;
+ justify-items: center;
+ align-items: center;
+ border: 1px solid #ababab;
+ background-color: #ffffff;
+ opacity: 0.9;
+ background-image: url(img/product-3.png);
+ 
+ }
+ .productContent4 {
+ display: grid;
+ grid-template-rows: 62px [arrow]50px 17px [name]17px 23px [details]33px;
+ grid-row: 1/span 7;
+ grid-column: 10/span 3;
+ justify-items: center;
+ align-items: center;
+ border: 1px solid #ababab;
+ background-color: #ffffff;
+ opacity: 0.9;
+ background-image: url(img/product-4.png);
+ 
+ } 
+ .promoProduct{
+     display: grid;
+     margin-left: -98px;
+     margin-right: -98px;
+     grid-row: promo;
+     grid-template-columns: repeat(2,683px);
+    
+     
+
+ }
+ .promoProduct h3
+ {
+/* Style for "exclusive" */
+color: #00a6f1;
+margin-top: 0px;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 48px;
+text-align: left;
+text-transform: uppercase;
+margin-bottom: 18px;
+/* Text style for "exclusive" */
+
+ }
+ .promoProduct h1{
+     /* Style for "Fishnet Ch" */
+color: #303030;
+margin-top: 0px;
+font-family: Montserrat B;
+font-size: 36px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+margin-bottom: 24px;
+/* Text style for "Fishnet Ch" */
+
+ } 
+ .promoProduct p{
+     /* Style for "Seat and b" */
+color: #7e7e7e;
+font-family: Montserrat Light;
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24.04px;
+text-align: left;
+margin-bottom: 34px;
+margin-top: 0px;
+/* Text style for "Seat and b" */
+
+ }
+ .promoProduct button{
+    background-image: url(img/order.png);
+    border: none;
+    width: 212px;
+    height: 45px;
+    box-shadow: 0 2px 5px 1px rgba(48, 48, 48, 0.35);
+    border-radius: 23px;
+    background-color: #ffffff;
+    /* Style for "Order Us" */
+color: #303030;
+color: #7e7e7e;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "Order Us" */
+color: #303030;
+font-style: normal;
+letter-spacing: 3.6px;
+line-height: normal;
+
+ }
+ .promoContent1
+ {display: grid;
+    
+    
+    grid-template-rows: 228px [cont]206px 256px;
+background-image: url(img/promo-img1.png);
+justify-content: center;
+ }
+ .box{
+     width: 379px;
+     height: 206px;
+     margin-left: 50px;
+     margin-top: 228px;
+     margin-bottom: 256px;
+     margin-right: 259px;
+ }
+ .promoContent2{
+    
+    grid-template-rows: 228px [cont]206px 256px;
+    background-image: url(img/promo-img.png);
+ }
+
+
+.trending{
+    display: grid;
+    grid-row: trending;
+    grid-template-rows: 119px [title]35px 64px [productsI]770px 120px;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-auto-flow: column;
+
+}
+.trend {    display: grid;
+    grid-row: title;
+    grid-column: 1/span 4;
+    color: #303030;
+
+}
+.trend h1{
+    margin: 0px;
+    color: #303030;
+    font-family: Montserrat B;
+    font-size: 36px;
+    font-weight: 700;
+   
+    text-align: left;
+}
+
+
+
+
+ .btn_ghost2 {
+    display: grid;
+    grid-row: title;
+    grid-auto-flow: column;
+  grid-column: 10/span 3;
+  align-content: end;
+    justify-content: end;
+}
+.btn_ghost2 a{
+    /* Style for "explore al" */
+   
+    color: #303030;
+color: #7e7e7e;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "explore al" */
+color: #303030;
+font-style: normal;
+letter-spacing: 3.6px;
+line-height: normal;
+text-decoration: none;
+}
+.products{
+    display: grid;
+    grid-row: productsI;
+    grid-template-rows: [fisrtI]370px 30px [secondI]370px ;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+}
+.products img:hover{
+    outline:1px solid skyblue;
+}
+#p11{
+    grid-row:fisrtI;
+    grid-column: 1/span 4;
+
+}
+
+#p21{
+    grid-row: fisrtI;
+    grid-column: 5/span 4;
+
+}
+#p31{
+    grid-row: fisrtI;
+    grid-column: 9/span 4;
+
+}
+#p41{
+    grid-row: secondI;
+    grid-column: 1/span 4;
+
+}
+#p5{
+    grid-row: secondI;
+    grid-column: 5/span 4;
+
+}
+#p6{
+    grid-row: secondI;
+    grid-column: 9/span 4;
+
+}
+.hotDeal{
+    display: grid;
+    grid-row: hotdeal;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-template-rows: 283px [slidercont2]233px  140px [buttons2]60px ;
+    grid-auto-flow: inherit;
+    margin-left: -98px;
+    margin-right: -98px;
+    width:1366px;
+    height: 710px;
+    background-image: url(img/slider.png) ;
+    background-size: 100% 100%;
+}
+.sliderContent2{
+    display: grid;
+    
+    margin-left: 98px;
+    margin-right: 98px;
+    grid-template-columns: repeat(12,70px);
+    grid-template-rows: 35px 77px 86px 45px;
+    grid-column-gap:30px;
+   grid-column: 1/span 5;
+   grid-auto-flow: row;
+   grid-row: slidercont2;
+}
+.sliderContent2 h3{ grid-row-start: 1;
+    grid-column: 1/span 2;
+    color: #ff003e;
+margin: 0px;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 48px;
+text-align: left;
+text-transform: uppercase;
+}
+.sliderContent2 h1
+{   grid-row-start: 2;
+    margin-top: 0px;
+    width: 500px;
+    height: 43px;
+    color: #303030;
+font-family: Montserrat  T;
+font-size: 62px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 72px;
+text-align: left;
+text-transform: uppercase;
+    /* Text style for "Fishnet Ch" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.sliderContent2 p
+{
+    /* Style for "Seat and b" */
+    grid-row-start: 3;
+    grid-column: 1/span 6;
+    color: #7e7e7e;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: left;
+    text-transform: none;
+    /* Text style for "Seat and b" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.sliderContent2 button
+{
+    grid-row-start: 4;
+    background-image: url(img/order.png);
+    border: none;
+    width: 212px;
+    height: 45px;
+    box-shadow: 0 2px 5px 1px rgba(48, 48, 48, 0.35);
+    border-radius: 23px;
+    background-color: #ffffff;
+    /* Style for "Order Us" */
+color: #303030;
+color: #7e7e7e;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "Order Us" */
+color: #303030;
+font-style: normal;
+letter-spacing: 3.6px;
+line-height: normal;
+}
+.sliderContent button:checked
+{   text-decoration: none;
+    border: 1px solid #f0f0f0;
+}
+
+
+.navigation2{
+    display: grid;
+   grid-column: 7;
+   grid-row-start: buttons2;
+    height: 40px;
+    grid-auto-flow: column;
+}
+.exclisiveProduct{
+    display: grid;
+    grid-row: exclusive;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-template-rows:[startcont]270px 30px [endcontent]270px;
+
+}
+.exprocont{
+    display: grid;
+    grid-row: startcont/span 3;
+    grid-column: 1/7;
+   
+    grid-template-rows: 186px [ex]13px 18px [fish]28px 24px [p4]36px 34px [but]53px 185px;
+    background-image: url(img/product-1-lg.png);
+}
+.exprocont h3{
+    margin: 0px;
+    grid-column: 1/2;
+    grid-row-start: ex;
+    color: #00a6f1;
+margin-left: 31px;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+
+text-align: left;
+text-transform: uppercase;
+}
+.exprocont h1{
+    margin: 0px;
+    grid-column: 1/3;
+    margin-left: 32px;
+    grid-row-start: fish;
+    color: #303030;
+font-family: Montserrat B;
+font-size: 36px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+}
+.exprocont p{
+    margin: 0px;
+    grid-row:p4;
+    grid-column: 1/4;
+    margin-left: 30px;
+    color: #7e7e7e;
+font-family: Montserrat Light;
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+
+text-align: left;
+}
+.exprocont button{grid-row: but;
+    background-image: url(img/order.png);
+    border: none;
+    margin-left: 30px;
+    width: 212px;
+    height: 45px;
+    box-shadow: 0 2px 5px 1px rgba(48, 48, 48, 0.35);
+    border-radius: 23px;
+    background-color: #ffffff;
+    /* Style for "Order Us" */
+color: #303030;
+color: #7e7e7e;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "Order Us" */
+color: #303030;
+font-style: normal;
+letter-spacing: 3.6px;
+line-height: normal;
+
+}
+#prod2{
+    grid-row: startcont;
+    grid-column: 7/span 3;
+}
+#prod3{
+    grid-row: startcont;
+    grid-column:10/span 3 ;
+}#prod4{
+    grid-row:endcontent ;
+    grid-column: 7/span 3;
+}
+#prod5{
+    grid-row: endcontent;
+    grid-column:10/span 3 ;
+}
+.mobileApp{
+    display: grid;
+    grid-row: mobile ;
+    margin-left: -98px;
+    margin-right: -98px; 
+    background-image: url(img/back-img.png);
+    grid-column: span 12;
+}
+.mobcontent{
+    margin-left: 98px;
+    margin-right: 98px;
+    display: grid;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-template-rows: 125px [tag]13px 22px [names]116px 42px [det]21px 33px [apgo]40px;
+    
+}
+.mobcontent h3{
+    margin: 0px;
+grid-column: 1/3;
+grid-row: tag;
+/* Style for "mobile app" */
+color: #7e7e7e;
+color: #ffffff;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 48px;
+text-align: left;
+text-transform: uppercase;
+/* Text style for "mobile app" */
+color: #7e7e7e;
+font-style: normal;
+letter-spacing: 1.8px;
+line-height: normal;
+
+}
+.mobcontent h1{margin: 0px;
+    grid-column: 1/7;
+    grid-row: names;
+    /* Style for "Find. Foll" */
+color: #303030;
+font-family: Montserrat  T;
+font-size: 62px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+
+text-align: left;
+text-transform: uppercase;
+/* Text style for "Find. Foll" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.mobcontent p{margin: 0px;
+    grid-column: 1/6;
+    grid-row:det;
+    /* Style for "Save your" */
+color: #7e7e7e;
+font-family: Montserrat;
+font-size: 22px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+
+text-align: left;
+/* Text style for "Save your" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.mobcontent div{margin: 0px;
+    grid-column: 1/5;
+    grid-row: apgo;
+    
+}
+.footer{display: grid;
+    grid-row: footer;
+    grid-column: span 12;
+    grid-template-rows: 120px [tit]13px 26px 62px [foor]59px 26px  [foot]30px;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+
+}
+
+.contact{height: 102px;
+  display: grid;
+  grid-row-start: 4;
+  grid-template-rows: 32px 34px 32px ;
+    grid-column: 1/4;
+}
+.tit {
+    display: grid;
+    grid-row: tit;
+    grid-column: span 12;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-auto-flow: column;
+}
+.tit h3{
+    /* Style for "Contact Us" */
+    margin: 0px;
+    grid-row: tit;
+color: #7e7e7e;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+
+text-align: left;
+text-transform: uppercase;
+/* Text style for "C, ontact" */
+font-style: normal;
+letter-spacing: 1.8px;
+line-height: normal;
+}
+.tit h3:nth-child(2n){ display: grid;
+    grid-column: 4/7;
+    justify-self: start;
+}
+.tit h3:first-child{ display: grid;
+    grid-column: 1/ 3;
+}
+.tit h3:last-child{ display: grid;
+    grid-column: 9/span 3;
+    justify-self: start;
+
+}
+.contact p:first-child{display: grid;
+    grid-row: 1;
+    grid-column: 1/4;
+    margin-top: 0px;
+    /* Style for "132A Bridg" */
+color: #303030;
+font-family: Montserrat ;
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 22px;
+text-align: left;
+/* Text style for "132A Bridg" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+
+}
+.contact p:last-child{
+
+    display: grid;
+    grid-row: 3;
+    margin-top: 0px;
+    grid-column: 1/3;
+    /* Style for "132A Bridg" */
+color: #303030;
+font-family: Montserrat ;
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 22px;
+text-align: left;
+/* Text style for "132A Bridg" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.useful{ 
+display: grid;
+    grid-auto-flow: column;
+    grid-column: 4/8;
+    grid-row-start: 4;
+    grid-template-columns:repeat(5,70px);
+    grid-column-gap:30px;
+    grid-template-rows: 62px;
+    
+}
+
+.useful p{
+    /* Style for "Architect" */
+color: #303030;
+font-family: Montserrat B;
+font-size: 14px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+margin: 0px;
+text-align: left;
+text-transform: uppercase;
+/* Text style for "Architect" */
+line-height: 22px;
+
+}
+.useful p:nth-child(3n){
+    margin-bottom: 0px;
+}
+.use1{grid-column: 1/3; grid-row:1 ; justify-self: start;}
+
+.use2{ grid-column: 3/6;grid-row: 1; justify-self: center;}
+.lets{
+    margin-top: -1px;
+    display:grid;
+    grid-row: 4;
+    grid-column: 9/span 5;
+   
+}
+
+.lets p{ 
+    /* Style for "Suscribe t" */
+color: #303030;
+margin: 0px;
+font-family: Montserrat ;
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 22px;
+text-align: left;
+/* Text style for "Suscribe t" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.footer form{
+    position: relative;
+    
+    grid-column: 9;
+    grid-row: foor;
+    width: 370px;
+    height: 48px;
+}
+footer input[type=email]{
+    position: relative;
+    
+    width: 370px;
+    height: 48px;
+    border: 0px;
+    outline: 0px;
+}
+input#email{width: 370px;
+    height: 48px;}
+.footer form::placeholder{
+    
+    /* Style for "your email" */
+color: #7e7e7e;
+font-family: Montserrat Light;
+font-size: 14px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+
+text-align: left;
+/* Text style for "your email" */
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}
+.footer input[type=submit]{
+    grid-row:foor ;
+   position: relative;
+   bottom: 34px;
+   right: -345px;
+   
+    color: #7e7e7e;
+    width: 21px;
+    height: 17px;
+    border: 0px;
+    outline: 0px;
+    font-style: normal;
+    letter-spacing: normal;
+    background-color: #ffffff;
+    text-align: left;
+   
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #7e7e7e;
+ 
+    font-style: normal;
+    letter-spacing: normal;
+   background-image: url(img/sub.png);
+    text-align: left;
+    
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;} 
+   .foot{display: grid;
+        grid-column: 1/12;
+       grid-row: foot;
+       grid-auto-flow: column;
+       grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+      
+   }
+    #copy{
+        margin: 0px;
+        grid-column: 1/span 5;
+        grid-row:foot;
+        /* Style for "© Copyrigh" */
+color: #7e7e7e;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+
+text-align: left;
+text-transform: uppercase;
+/* Text style for "©,  Copyri" */
+font-style: normal;
+letter-spacing: 0.6px;
+line-height: normal;
+    }
+    .social{  display: grid;
+        margin: 0px; 
+         
+        grid-auto-flow: column;
+        grid-column: 6/span 2;
+        grid-row:foot;
+    }
+   .foot a{height: 28px;
+    width: 28px;
+       margin-right: 6px;
+   }
+     .foot a:hover{
+         border-radius: 100%;
+        width: 28px; 
+background-color: black;
+    }
+    #term{
+        position: relative;
+        left: 20px;
+        margin: 0px;
+        grid-column: 9/span 4;
+        grid-row:foot;
+        /* Style for "Terms & Co" */
+color: #7e7e7e;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 26px;
+
+text-transform: uppercase;
+/* Text style for "T, erms &" */
+font-style: normal;
+letter-spacing: 0.6px;
+line-height: normal;
+    }
+.productsP{
+    margin-left: 98px;
+    margin-right: 98px;
+    display: grid;
+    grid-row: products;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-template-rows: 41px [tab]35px 20px repeat(4,370px) 41px [load]29px 110px;
+    grid-row-gap:30px;
+}
+.tabMenu{
+    display: grid;
+    grid-row: tab;
+    grid-auto-flow: column;
+    grid-column: 1/span 7;
+    
+
+}
+.tabMenu div:hover{
+    border-bottom: 3px solid #212121;
+}
+.tMenu{
+    margin-left: 10px;
+    
+font-family: Montserat B;
+color: #6c6c6c;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+text-transform: uppercase;
+/* Text style for "All" */
+
+font-style: normal;
+letter-spacing: 1.8px;
+line-height: normal;
+
+
+}
+.tMenu a{color: #6c6c6c;
+    text-decoration: none;
+}
+.tMenu a:hover{
+    color:#212121;
+}
+.set1{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 1/span 12;
+    grid-row: 4/span 2;
+}
+.set2{
+    margin-top: -30px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 1/span 12;
+    grid-row: 6/span 2;
+}
+#ps11{
+    grid-row: 1;
+    grid-column: 1/span 4;
+
+}
+#ps12{
+    grid-row: 1;
+    grid-column: 5/span 4;
+
+}
+#ps13{
+    grid-row: 1;
+    grid-column: 9/span 4;
+
+}
+#ps14{
+    grid-row: 2;
+    grid-column: 1/span 4;
+
+}
+#ps15{
+    grid-row: 2;
+    grid-column: 5/span 4;
+
+}
+#ps16{
+    grid-row: 2;
+    grid-column: 9/span 4;
+
+}
+#ps21{
+    grid-row: 1;
+    grid-column: 1/span 4;
+
+}
+#ps22{
+    grid-row: 1;
+    grid-column: 5/span 4;
+
+}
+#ps23{
+    grid-row: 1;
+    grid-column: 9/span 4;
+
+}#ps24{
+    grid-row: 2;
+    grid-column: 1/span 4;
+
+}#ps25{
+    grid-row: 2;
+    grid-column: 5/span 4;
+
+}#ps26{
+    grid-row: 2;
+    grid-column: 9/span 4;
+
+}
+.load{
+    margin-left: 60px;
+    display: grid;
+    grid-row: load;
+    width: 42px;
+    grid-column: 6/7;
+    justify-content: center;
+    
+}
+.load div{  width: 42px;
+    background-image: url(img/load.png) ;
+    background-repeat: no-repeat;
+    
+}
+.load :hover{
+    transform: rotate(90deg);
+    
+}
+
+.load :checked{
+    transform: rotate(90deg);
+    
+}
+.prodProm{
+    display: grid;
+    grid-row: promo;
+    margin-left: 98px;
+    margin-right: 98px;
+}
+.fo{ display: grid;
+    grid-row: footer;
+    margin-left: 98px;
+    margin-right: 98px;
+}
+.fopD{ display: grid;
+    grid-row: footer;
+    
+}
+.sliderD{
+    grid-column: 1/span 6;
+   grid-row: sliderD;
+   grid-template-rows: 570px 11px 70px;
+   grid-template-columns: repeat(12,70px);
+   grid-column-gap: 30px;
+    display: grid;
+   
+}
+#sD{grid-row: 1;
+    background-image: url(img/sliderD.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 570px;
+    height: 570px;
+}
+.navD{
+    grid-row: 3;
+    grid-column: 2/span 4;
+    margin-left: 60px;
+   
+}
+.buttonD{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+#controll{
+background-image: url(img/controll.png);
+border: none;
+}
+#controll11{
+    border: none;
+    background-image: url(img/controll11.png);
+}
+#controll2{
+    border: none;
+    background-image: url(img/controll2.png);
+}
+.slidercontD{ display: grid;
+    grid-row: sliderD;
+    grid-column: 7/span 6;
+    grid-template-rows: 47px 28px 23px 13px 57px 31px 71px  49px;
+}
+.slidercontD h1{
+    grid-row: 1;
+    color: #303030;
+    font-family: Montserrat B;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    margin: 0px;
+}
+.slidercontD h3{
+    grid-row: 3;
+   margin: 0px;
+    font-family: Montserrat B;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 48.02px;
+    text-align: center;
+    text-transform: uppercase;
+    /* Text style for "Hot Deal" */
+    color: #ff003e;
+    font-style: normal;
+    letter-spacing: 1.8px;
+    line-height: normal;
+}
+.slidercontD h5{
+    margin: 0px;
+    grid-row: 5;
+    color: #303030;
+    font-family: Gotham;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    
+    text-align: center;
+    /* Text style for "$, /, sq" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    /* Text style for "" */
+    font-size: 48px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    /* Text style for "36.7" */
+    
+}
+.slidercontD h5 span{
+    font-size: 72px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.slidercontD button{
+    grid-row: 7;
+    border-radius: 35px;
+    background-image: url(img/btn.png);
+    box-shadow: 0 2px 5px 1px rgba(48, 48, 48, 0.35);
+border-radius: 35px;
+background-color: #ff003d;
+border: none;
+color: #ffffff;
+font-family: Montserrat B;
+font-size: 22px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24.01px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "Order Us" */
+font-style: normal;
+letter-spacing: 4.4px;
+line-height: normal;
+
+}
+.slidercontD div{
+    grid-row: 8;
+    color: #303030;
+    font-family: Gotham;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24.01px;
+    text-align: left;
+    /* Text style for "The majest" */
+    font-style: normal;
+    letter-spacing: 0.4px;
+    line-height: normal;
+    
+}
+.textd p{
+    color: #303030;
+font-family: Gotham;
+font-size: 16px;
+font-weight: 300;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24.01px;
+text-align: left;
+/* Text style for "The majest" */
+font-style: normal;
+letter-spacing: 0.4px;
+line-height: normal;
+}
+.related{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 1/span 12  ;
+    grid-row:related ;
+    grid-template-columns: repeat(12,70px);
+   grid-column-gap: 30px;
+   grid-template-rows: 30px  68px  370px  ;
+   
+}
+.rel{
+    grid-row: 1;
+    grid-column: 1/4;
+}
+
+.btn_ghost3 {
+    display: grid;
+    grid-row: 1;
+    grid-column: 10/span 3;
+    grid-auto-flow: column;
+  
+  align-content: end;
+    justify-content: end;
+}
+.btn_ghost3 a{
+    /* Style for "explore al" */
+   
+    color: #303030;
+color: #7e7e7e;
+font-family: Montserrat B;
+font-size: 18px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+/* Text style for "explore al" */
+color: #303030;
+font-style: normal;
+letter-spacing: 3.6px;
+line-height: normal;
+text-decoration: none;
+}
+.btn_ghost3 a:hover{
+    opacity: 0.5;
+}
+
+
+.productsD{
+    display: grid;
+    grid-auto-flow: column;
+    grid-row: 3;
+    grid-column: 1/span 12;
+    grid-gap: inherit;
+    grid-template-columns: inherit;
+}
+#pd{
+    grid-row: 3;
+    grid-column: 1/4;
+}
+#pd1{
+    grid-row: 3;
+    grid-column: 5/8;
+}
+#pd2{
+    grid-row: 3;
+    grid-column: 9/12;
+}
+.contentC{
+    margin-left: 98px;
+    margin-right: 98px;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: [navbarC]90px 170px [titleC]58px [heroC]54px 71px [location]370px  [footer]384px;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;  
+}
+.navbarC{
+    display: grid;
+   grid-template-columns: repeat(12,70px);
+    grid-column: 1/12;
+    grid-row: navbarC;
+    grid-template-rows: 90px;
+    grid-auto-flow: row;
+    text-transform: uppercase;
+    align-items: end;
+    z-index: 2;
+
+}
+.heroC{
+    grid-template-rows: [navbarC]90px  170px [titleC]58px [hero]54px;
+    grid-column: 1/12;
+display: grid;
+width: 1366px;
+background-color: #f5f5f5;
+grid-row: navbarC/span 4;
+margin-left:-98px ;
+margin-right:-98px ;
+z-index: 1;
+}
+.titleC{
+    display: grid;
+    margin-left: 98px;
+    margin-right: 98px;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap: 30px;
+    grid-row:titleC ;
+    align-items: start;
+
+}
+.titleC h1 {display: grid;
+   grid-column: 1/10;
+    margin: 0px;
+    /* Style for "Our Produc" */
+
+    color: #212121;
+    font-family: Montserrat T;
+    font-size: 62px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 72px;
+    text-align: left;
+    /* Text style for "Contact Us" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+.fopC{
+    grid-column: 1/12;
+    grid-row: footer;
+}
+.boxes{display: grid;
+    
+    grid-row:location ;
+    grid-column: 1/12;
+    grid-template-columns: repeat(12,70px);
+    grid-column-gap:30px;
+    grid-auto-flow: column;
+    text-align: center;
+
+}
+.box1{
+    display: grid;
+    width: 370px;
+    height: 370px;
+    border: 1px solid #9c9c9c;
+background-color: #ffffff;
+opacity: 0.9;
+grid-column: 1/4;
+grid-template-rows: 48px 48px 34px 16px 23px 138px 63px;
+grid-auto-flow: row;
+justify-content: center;
+
+}
+.box1 img{
+    grid-row: 2;
+    justify-self: center;
+}
+.box1 h1{
+    grid-row: 4;
+    margin: 0px;
+}
+.box1 div{
+    grid-row: 6;
+}
+.box2{
+    display: grid;
+    width: 370px;
+    height: 370px;
+    border: 1px solid #9c9c9c;
+background-color: #ffffff;
+opacity: 0.9;
+grid-column: 5/span 4;
+grid-template-rows: 48px 48px 34px 16px 23px 138px 63px;
+grid-auto-flow: row;
+justify-content: center;
+
+}
+.box2 img{
+    grid-row: 2;
+    justify-self: center;
+}
+.box2 h1{
+    grid-row: 4;
+    margin: 0px;
+}
+.box2 div{
+    grid-row: 6;
+}
+.box3{
+    display: grid;
+    width: 370px;
+    height: 370px;
+    border: 1px solid #9c9c9c;
+background-color: #ffffff;
+opacity: 0.9;
+grid-column: 9/span 4;
+grid-template-rows: 48px 48px 34px 16px 23px 138px 63px;
+grid-auto-flow: row;
+justify-content: center;
+
+}
+.box3 img{
+    grid-row: 2;
+    justify-self: center;
+}
+.box3 h1{
+    grid-row: 4;
+    margin: 0px;
+}
+.box3 div{
+    grid-row: 6;
+}
+.phone{ margin: 0px;
+    color: #6c6c6c;
+    font-family: Montserrat B;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.p19{ 
+    margin: 0px;
+    color: #212121;
+    font-family: Montserrat B;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.email{ 
+    margin: 0px;
+    color: #6c6c6c;
+    font-family: Montserrat B;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.infoE{ margin: 0px;
+     color: #212121;
+    font-family: Montserrat B;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 10px;}
+.address{ margin: 0px;margin-bottom: 3px;
+    color: #6c6c6c;
+    font-family: Montserrat B;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;}
+.addr{ margin: 0px; color: #6c6c6c;
+    font-family: Montserrat Light;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-align: center;}
